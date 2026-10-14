@@ -6,58 +6,75 @@
   <link href="css/output.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="en-tet-container flex justify-between items-center h-[60px] w-full border-b-2 bg-white px-20 border-[#DADFD9]">
-       <p class="icon">Test Name</p>
-       <nav>
-       <ul class="flex gap-10 justify-center">
-        <li class="hover:text-green-700"><a href="accueil.html">Accuel</a></li>
-        <li class="hover:text-green-700"><a href="catalogue.html">Catalogue</a></li>
-        <li class="hover:text-green-700"><a href="contact.html">Contact</a></li>
-       </ul>
-       </nav>
-       <div class="relative inline-block p-2 rounded-xl border border-gray-200 bg-white">
-
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <header class="flex p-4 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
+    <div>
+      <p class="icon">Test Name</p>
+    </div>
+    <div class="flex items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
     <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
   </svg>
   
+    <div class="relative">
 
-  <span class="absolute -top-1 -right-1 bg-amber-700 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
-    2
-  </span>
+  <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+
+  <label for="menu-toggle" class="cursor-pointer block md:hidden p-2 text-gray-700">
+
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </label>
+
+ 
+  <nav class="hidden peer-checked:flex flex-col absolute top-full right-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:flex md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none">
+    <a href="accueil.html" class="text-gray-700 hover:text-black">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 hover:text-black">Catalogue</a>
+    <a href="contact.html" class="text-gray-700 hover:text-black">Contact</a>
+  </nav>
+</div>
+</div>
+  
+  
+
+ 
 </div>
     </div>
     
   </header>
   <main class="min-h-screen">
-    <div class="w-150 h-15 text-center bg-white border-2 m-auto mt-20 rounded-xl border-[#DADFD9] shadow-lg">
+    <div class="w-80 h-15 text-center bg-white border-2 m-auto mt-20 rounded-xl border-[#DADFD9] shadow-lg">
   <h1 class=" text-3xl mt-2">
     Votre Panier
   </h1>
   </div>
   </main>
   <footer>
-    <div class="pied-container text-xs h-[200px] w-full bg-white border-t-2 flex justify-between items-center px-20 border-[#DADFD9]">
-        <div class="info w-100">
-          <h2 class="mb-5 text-black text-lg">Test name</h2>
-          <P>Maison dédiée aux métiers d'art français. Nous mettons
-en lumière des créations façonnées à la main, conçues
-pour traverser le temps avec justesse et authenticité.</P>
-          <p class="mt-10">© 2026 ifolki. Tous droits réservés. Projet pédagogique e-commerce.</p>
-        </div>
+    <div class="pied-container text-xs w-full bg-white border-t-2 p-5 border-[#DADFD9] flex flex-col justify-between">
+    
+
+    <div class="flex md:flex-row justify-between gap-6">
         <div class="navigation">
-          <h2 class="mb-5 text-black text-lg">NAVIGATION</h2>
-          <p class="mb-2"><a href="accueil.html">Accuel</a></p>
-          <p class="mb-2"><a href="catalogue.html">Catalogue</a></p>
+          <h2 class="mb-3 text-black text-lg font-bold">NAVIGATION</h2>
+          <p class="mb-1"><a href="accueil.html" class="hover:underline">Accueil</a></p>
+          <p class="mb-1"><a href="catalogue.html" class="hover:underline">Catalogue</a></p>
         </div>
+        
         <div class="contact">
-          <h2 class="mb-5 text-black text-lg">AIDE & CONTACT</h2>
-          <p class="mb-2"><a href="contact.html">Nous contacter</a></p>
-          <p class="mb-2"><a href="#">Questions frequentes (FAQ)</a></p>
-          <p >Email : <a href="mailto:ifolki01@gmail.com">ifolki01@gmail.com</a></p>
+          <h2 class="mb-3 text-black text-lg font-bold">AIDE & CONTACT</h2>
+          <p class="mb-1"><a href="contact.html" class="hover:underline">Nous contacter</a></p>
+          <p class="mb-1"><a href="#" class="hover:underline">Questions frequentes (FAQ)</a></p>
+          <p>Email : <a href="mailto:ifolki01@gmail.com" class="hover:underline">ifolki01@gmail.com</a></p>
         </div>
     </div>
+
+
+    <div class="info text-center mt-6 pt-4 border-t border-[#DADFD9]">
+      <p>© 2026 ifolki. Tous droits réservés.</p>
+    </div>
+
+</div>
   </footer>
 </body>
 </html>
