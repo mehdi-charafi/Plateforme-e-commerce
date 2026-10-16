@@ -1,16 +1,241 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - ifoulki.ma</title>
+    <link rel="stylesheet" href="css/output.css">
 </head>
-<body>
-  <h1 class="text-4xl font-bold underline">
-    Hello world
-  </h1>
+
+
+<body class="bg-gray-100 text-gray-900">
+    <header class="flex pr-8 pl-3 md:pl-0 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
+   <div class="relative">
+
+  <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+
+  <label for="menu-toggle" class="cursor-pointer block md:hidden p-2 text-gray-700">
+
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </label>
+
+ <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-50 lg:mr-100">
+    <a href="accueil.html" class="text-gray-700 hover:text-black md:text-xl">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 hover:text-black md:text-xl">Catalogue</a>
+    <a href="contact.html" class="text-gray-700 hover:text-black md:text-xl">Contact</a>
+  </nav>
+  
+</div>
+    <div>
+      <img src="images/Gemini_Generated_Image_mb0nx1mb0nx1mb0n-removebg-preview 2.png" class="w-40 mr-3 mt-2">
+    </div>
+    <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:flex md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-50 lg:mr-100">
+    <a href="accueil.html" class="text-gray-700 hover:text-black md:text-xl">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 hover:text-black md:text-xl">Catalogue</a>
+    <a href="contact.html" class="text-gray-700 hover:text-black md:text-xl">Contact</a>
+  </nav>
+    <div class="relative inline-block p-2 rounded-xl border border-gray-200 bg-white cursor-pointer">
+  <a href="panier.html"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+  </svg></a>
+  
+  
+
+  <span class="absolute -top-1 -right-1 bg-amber-700 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+    2
+  </span>
+</div>
+  
+  
+
+ 
+</div>
+    </div>
+    
+  </header>
+    <main class="mx-auto max-w-7xl px-4 py-6 md:px-8 md:py-10">
+
+        <h1 class="mb-2 text-2xl font-bold md:text-3xl">
+            Nos créations artisanales
+        </h1>
+        <p class="mb-5 text-sm text-gray-500">Découvrez notre sélection de créations uniques, réalisées avec soin et passion.</p>
+        <div class="mb-6 flex flex-wrap gap-2">
+            <a href="#produits"
+               class="rounded-md bg-[#315c49] px-4 py-2 text-xs text-white">Tous les produits</a>
+
+            <a href="#ceramique"
+               class="rounded-md border border-gray-200 bg-white px-4 py-2 text-xs">Céramique</a>
+
+            <a href="#decoration"
+               class="rounded-md border border-gray-200 bg-white px-4 py-2 text-xs">Décoration</a>
+
+            <a href="#textile"
+               class="rounded-md border border-gray-200 bg-white px-4 py-2 text-xs">Textile</a>
+
+            <a href="#art"
+               class="rounded-md border border-gray-200 bg-white px-4 py-2 text-xs">Art de la table</a>
+        </div>
+
+
+        <section id="produits"
+                 aria-label="Catalogue des produits"
+                 class="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 xl:grid-cols-4">
+
+            <article id="ceramique" class="overflow-hidden rounded-md bg-white">
+                <img src="img/1.jpg"
+                     alt="a"
+                     class="h-32 w-full bg-gray-200 object-cover md:h-48">
+
+                <div class="p-3">
+                    <span class="rounded bg-[#e7eee8] px-2 py-1 text-xs text-[#315c49]">Céramique</span>
+                    <h2 class="mt-3 text-sm font-semibold">Vase en céramique Alba</h2>
+                    <p class="mt-1 text-xs text-gray-500">Grès chamotté minéral cuit à haute température.</p>
+                    <p class="mt-3 font-bold text-[#315c49]">349 MAD</p>
+                    <a href="page3.html"
+                       class="mt-3 block border-t border-gray-100 pt-3 text-xs text-[#315c49] hover:underline">Voir le produit </a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-md bg-white">
+                <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=500&q=80"
+                     alt="Objet décoratif artisanal"
+                     class="h-32 w-full bg-gray-200 object-cover md:h-48">
+
+                <div class="p-3">
+                    <span class="rounded bg-[#e7eee8] px-2 py-1 text-xs text-[#315c49]">Céramique</span>
+
+                    <h2 class="mt-3 text-sm font-semibold">Vase artisanal</h2>
+
+                    <p class="mt-1 text-xs text-gray-500">Une création faite avec soin.</p>
+
+                    <p class="mt-3 font-bold text-[#315c49]">249 MAD</p>
+
+                    <a href="page3.html"
+                       class="mt-3 block border-t border-gray-100 pt-3 text-xs text-[#315c49] hover:underline">
+                        Voir le produit 
+                    </a>
+                </div>
+            </article>
+
+            <article id="decoration" class="overflow-hidden rounded-md bg-white">
+                <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=500&q=80"
+                     alt="Décoration artisanale"
+                     class="h-32 w-full bg-gray-200 object-cover md:h-48">
+
+                <div class="p-3">
+                    <span class="rounded bg-[#e7eee8] px-2 py-1 text-xs text-[#315c49]">Décoration</span>
+
+                    <h2 class="mt-3 text-sm font-semibold">Objet décoratif</h2>
+
+                    <p class="mt-1 text-xs text-gray-500">Pour une décoration naturelle.</p>
+
+                    <p class="mt-3 font-bold text-[#315c49]">199 MAD</p>
+
+                    <a href="page3.html"
+                       class="mt-3 block border-t border-gray-100 pt-3 text-xs text-[#315c49] hover:underline">Voir le produit →</a>
+                </div>
+            </article>
+
+            <article id="art" class="overflow-hidden rounded-md bg-white">
+                <img src="https://images.unsplash.com/photo-1576021182211-9ea8dced3690?auto=format&fit=crop&w=500&q=80"
+                     alt="Vaisselle artisanale"
+                     class="h-32 w-full bg-gray-200 object-cover md:h-48">
+
+                <div class="p-3">
+                    <span class="rounded bg-[#e7eee8] px-2 py-1 text-xs text-[#315c49]">Art de la table</span>
+
+                    <h2 class="mt-3 text-sm font-semibold">Vaisselle artisanale</h2>
+
+                    <p class="mt-1 text-xs text-gray-500">Une touche artisanale à votre table.</p>
+
+                    <p class="mt-3 font-bold text-[#315c49]">179 MAD</p>
+
+                    <a href="page3.html"
+                       class="mt-3 block border-t border-gray-100 pt-3 text-xs text-[#315c49] hover:underline">Voir le produit →</a>
+                </div>
+            </article>
+
+            <article id="textile" class="overflow-hidden rounded-md bg-white">
+                <img src="https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=500&q=80"
+                     alt="Tapis artisanal"
+                     class="h-32 w-full bg-gray-200 object-cover md:h-48">
+
+                <div class="p-3">
+                    <span class="rounded bg-[#e7eee8] px-2 py-1 text-xs text-[#315c49]">
+                        Textile
+                    </span>
+
+                    <h2 class="mt-3 text-sm font-semibold">Tapis traditionnel</h2>
+
+                    <p class="mt-1 text-xs text-gray-500">
+                        Un style chaleureux pour votre maison.
+                    </p>
+
+                    <p class="mt-3 font-bold text-[#315c49]">499 MAD</p>
+
+                    <a href="page3.html"
+                       class="mt-3 block border-t border-gray-100 pt-3 text-xs text-[#315c49] hover:underline">
+                        Voir le produit 
+                    </a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-md bg-white">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=500&q=80"
+                     alt="Bol artisanal"
+                     class="h-32 w-full bg-gray-200 object-cover md:h-48">
+
+                <div class="p-3">
+                    <span class="rounded bg-[#e7eee8] px-2 py-1 text-xs text-[#315c49]">
+                        Céramique
+                    </span>
+
+                    <h2 class="mt-3 text-sm font-semibold">Bol traditionnel</h2>
+
+                    <p class="mt-1 text-xs text-gray-500">
+                        Une pièce artisanale originale.
+                    </p>
+
+                    <p class="mt-3 font-bold text-[#315c49]">99 MAD</p>
+
+                    <a href="page3.html"
+                       class="mt-3 block border-t border-gray-100 pt-3 text-xs text-[#315c49] hover:underline">
+                        Voir le produit →
+                    </a>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-md bg-white">
+                <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=500&q=80"
+                     alt="Vase décoratif"
+                     class="h-32 w-full bg-gray-200 object-cover md:h-48">
+
+                <div class="p-3">
+                    <span class="rounded bg-[#e7eee8] px-2 py-1 text-xs text-[#315c49]">
+                        Décoration
+                    </span>
+
+                    <h2 class="mt-3 text-sm font-semibold">Vase décoratif</h2>
+
+                    <p class="mt-1 text-xs text-gray-500">
+                        Une pièce pour embellir votre intérieur.
+                    </p>
+
+                    <p class="mt-3 font-bold text-[#315c49]">299 MAD</p>
+
+                    <a href="page3.html"
+                       class="mt-3 block border-t border-gray-100 pt-3 text-xs text-[#315c49] hover:underline">
+                        Voir le produit 
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
 </body>
 </html>
-<main>
-  
-</main>
