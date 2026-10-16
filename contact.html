@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-[#]">
  
     <header>
     <div class="en-tet-container flex justify-between items-center h-[60px] w-full border-b-2 bg-white px-20">
@@ -29,53 +29,74 @@
   </header>
 
 
-<main>
-  <img src="C:\Users\ycode\Plateforme-e-commerce\images\contact.jpg" alt="image céramique">
+<main class=" mx-auto w-full bg-[faf8F4] ">
+  <img src="images/img-contacte.jpg" alt="céramique de la boutique" class="h-[80px] w-full object-cover">
 
-  <h1>Contact</h1>
+  <h1 class="text-[36px] py-[20px] pl-[100px] font-bold ">Contact</h1>
+  <!--margin mb mt ml mr-->
     <section>
-    <form class="formulaire"> 
-      <label for="nom">Nom</label>
-      <input id="nom" name="Nom" type="text" required>
+    <form action="#" method="post"  class="  m-0 block"> 
+      
+          <label for="nom" class=" text-[14px] block mb-[6px] ">Nom complet</label>
+          <input id="nom" name="Nom" type="text" required class="block bg-white h-[33px] w-[500px] rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] ">
+       
 
-      <label for="e-mail">E-mail</label>
-      <input id="e-mail" name="e-mail" type="email" required>
+       
+           <label for="e-mail" class="text-[14px] mb-[6px] block">E-mail</label>
+           <input id="e-mail" name="e-mail" type="email" required   class="block bg-white h-[33px] w-[500px]  rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] ">
+      
 
-      <label for="message">Message</label>
-       <textarea name="Message" rows="5" type="text" required></textarea>
-    </form>
-     <button type="submit">Envoyez</button>
+
+      
+            <label for="message" class="text-[14px] mb-[6px] block">Message</label>
+            <textarea name="Message" rows="5" type="text" required  class="block bg-white h-[79px] w-[500px] rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] "></textarea>
+     
+          </form>
+     <button type="submit" class="rounded-[5px] bg-[#315A46] px-[9px] py-[5px] text-white ">Envoyez</button>
+  </section>
 
 
     
-      <p>Suivez-nous sur nos réseaux sociaux:</p>
-       <div>
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-     </div>
+      <h3 class="text-[12px] mb-[17px]">Suivez-nous sur nos réseaux sociaux:</h3>
+       <div >
+        <ul class="flex ml-10 gap-[9px] mb-[40px]">
+          <li>
+            <a href="#"><img src="" alt="instagram line"></a>
+          </li>
+          <li>
+            <a href="#"><img src="" alt="twitter lien"></a>
+          </li>
+          <li>
+            <a href="#"><img src="" alt="lien youtube page"></a>
+          </li>
+        </ul>
 
-      <article>
-      <img src="" alt="">
-      <h2>Notre boutique</h2>
-      <p>123 Avenure hassan 2
-         SAFI ,Maroc
-          46000</p>
+     </div>
+    <section >
+      <article class="mb-[20px]">
+        <img src="" alt="localisation">
+           <h2 class="text-[17px] font-medium">Notre boutique</h2>
+             <a href="#" class="text-[12] text-blue-500 ">123 Avenure hassan 2<br>
+              SAFI ,Maroc<br>
+               46000</a>
      </article>
 
-     <article>
-     <h2>Horaires d’assistance</h2>
-       <ul>
+     <article class="mb-[20px]">
+      <img src="" alt="Horaires">
+     <h2 class="text-[17px] font-medium">Horaires d’assistance</h2>
+       <ul class="text-[12]">
         <li>Lundi-Vemdredi: 9h00-18h00</li>
         <li>Samedi: 9h00-17h00</li>
         <li>Dimenche: Fermé</li>
        </ul>
        </article>
 
-       <article>
-        <h2>Téléphone</h2>
+       <article class="mb-[20px]">
+        <img src="" alt="Téléphone">
+        <h2 class="text-[17px] font-medium">Téléphone</h2>
         <p>+212 678769023</p>
        </article>
+    </section>
 
 </main>
 </body>
