@@ -6,7 +6,7 @@
   <link href="css/output.css" rel="stylesheet">
 </head>
 <body>
-  <header class="flex pr-8 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
+  <header class="flex pr-8 pl-3 md:pl-0 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
    <div class="relative">
 
   <input type="checkbox" id="menu-toggle" class="peer hidden" />
@@ -19,7 +19,11 @@
     </svg>
   </label>
 
- 
+ <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-50 lg:mr-100">
+    <a href="accueil.html" class="text-gray-700 hover:text-black md:text-xl">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 hover:text-black md:text-xl">Catalogue</a>
+    <a href="contact.html" class="text-gray-700 hover:text-black md:text-xl">Contact</a>
+  </nav>
   
 </div>
     <div>
