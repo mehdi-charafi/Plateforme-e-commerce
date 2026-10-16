@@ -31,6 +31,7 @@
     --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-poppins: "Poppins", sans-serif;
   }
 }
 @layer base {
@@ -242,6 +243,9 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -287,8 +291,14 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -343,6 +353,9 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
   }
+  .border-\[\#315A46\] {
+    border-color: #315A46;
+  }
   .border-\[\#DADFD9\] {
     border-color: #DADFD9;
   }
@@ -388,6 +401,9 @@
   .text-center {
     text-align: center;
   }
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -407,6 +423,9 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-\[\#315A46\] {
+    color: #315A46;
   }
   .text-\[\#242824\] {
     color: #242824;
@@ -431,12 +450,16 @@
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .peer-checked\:flex:is(:where(.peer):checked ~ *) {
     display: flex;
   }
   @media (hover: hover) {
-    .hover\:text-black:hover {
-      color: var(--color-black);
+    .hover\:text-\[\#315A46\]:hover {
+      color: #315A46;
     }
     .hover\:underline:hover {
       text-decoration-line: underline;
@@ -454,6 +477,9 @@
     }
     .md\:mr-50 {
       margin-right: calc(var(--spacing) * 50);
+    }
+    .md\:mr-60 {
+      margin-right: calc(var(--spacing) * 60);
     }
     .md\:mb-2 {
       margin-bottom: calc(var(--spacing) * 2);
@@ -537,6 +563,9 @@
     }
     .lg\:mr-100 {
       margin-right: calc(var(--spacing) * 100);
+    }
+    .lg\:mr-110 {
+      margin-right: calc(var(--spacing) * 110);
     }
     .lg\:mb-10 {
       margin-bottom: calc(var(--spacing) * 10);
@@ -625,6 +654,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-space-x-reverse {
   syntax: "*";
   inherits: false;
@@ -650,6 +684,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-space-x-reverse: 0;
     }
   }
