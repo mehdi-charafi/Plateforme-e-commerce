@@ -7,15 +7,7 @@
 </head>
 <body>
   <header class="flex p-4 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
-    <div>
-      <p class="icon">Test Name</p>
-    </div>
-    <div class="flex items-center">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-  </svg>
-  
-    <div class="relative">
+   <div class="relative">
 
   <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
@@ -28,12 +20,25 @@
   </label>
 
  
-  <nav class="hidden peer-checked:flex flex-col absolute top-full right-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:flex md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none">
+  <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:flex md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none">
     <a href="accueil.html" class="text-gray-700 hover:text-black">Accueil</a>
     <a href="catalogue.html" class="text-gray-700 hover:text-black">Catalogue</a>
     <a href="contact.html" class="text-gray-700 hover:text-black">Contact</a>
   </nav>
 </div>
+    <div>
+      <img src="images/Gemini_Generated_Image_mb0nx1mb0nx1mb0n-removebg-preview 2.png" class="w-40 mr-3 mt-2">
+    </div>
+    <div class="relative inline-block p-2 rounded-xl border border-gray-200 bg-white">
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+  </svg>
+  
+
+  <span class="absolute -top-1 -right-1 bg-amber-700 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+    2
+  </span>
 </div>
   
   
@@ -44,13 +49,13 @@
     
   </header>
   <main class="min-h-screen">
-  <div class="w-50 p-2 ml-4 mt-1 border-b-2 border-[#DADFD9]">
+  <div class="w-50 p-2 ml-4 mt-1 border-b-2 border-[var(--color-border)]">
   <h1 class=" text-3xl mt-2 font-bold text-[#242824]">
     Votre Panier
   </h1>
   </div>
   <section class="Panier p-4 flex flex-col">
-    <div class="produis1 w-86 h-25 bg-white mb-4 rounded-lg p-4 flex border-2 border-[#DADFD9] shadow-lg">
+    <div class="produis1 w-86 h-25 bg-white mb-4 rounded-lg p-4 flex border-2 border-[var(--color-border)] shadow-lg">
          <div class="img mr-4">
          <img src="images/vase-meiji-satsuma-antique-japon-1890s-1.webp" class="w-[60px] h-[60px] rounded-lg mt-1">
          </div>
@@ -62,7 +67,7 @@
 
     </div>
 
-    <div class="produis2 w-86 h-25 bg-white mb-4 rounded-lg p-4 flex border-2 border-[#DADFD9] shadow-lg">
+    <div class="produis2 w-86 h-25 bg-white mb-4 rounded-lg p-4 flex border-2 border-[var(--color-border)] shadow-lg">
          <div class="img mr-4">
          <img src="images/vase.webp" class="w-[60px] h-[60px] rounded-lg mt-1">
          </div>
@@ -74,7 +79,7 @@
  
     </div>
 
-    <div class="resume w-86 h-auto bg-white mb-4 rounded-lg p-4 border-2 border-[#DADFD9] shadow-lg">
+    <div class="resume w-86 h-auto bg-white mb-4 rounded-lg p-4 border-2 border-[var(--color-border)] shadow-lg">
     <h2 class="border-b-1 mb-5">Resume de la commande</h2>
     <p class="mb-5">Sous total 950$</p>
     <p class="mb-5">Livraison 5$</p>
@@ -84,7 +89,7 @@
   </section>
   </main>
   <footer>
-    <div class="pied-container text-xs w-full bg-white border-t-2 p-5 border-[#DADFD9] flex flex-col justify-between">
+    <div class="pied-container text-xs w-full bg-white border-t-2 p-5 border-[var(--color-border)] flex flex-col justify-between">
     
 
     <div class="flex md:flex-row justify-between gap-6">
@@ -103,7 +108,7 @@
     </div>
 
 
-    <div class="info text-center mt-6 pt-4 border-t border-[#DADFD9]">
+    <div class="info text-center mt-6 pt-4 border-t border-[var(--color-border)]">
       <p>© 2026 ifolki. Tous droits réservés.</p>
     </div>
 
