@@ -1,17 +1,22 @@
 <!doctype html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="site web e-commerce.">
+   <title>ifoulki/contact</title>
   <link href="css/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
   
 
 
 
-<body >
+<body>
 
  
-   <header class="flex pr-8 pl-3 md:pl-0 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
+  <header class="flex pr-8 pl-3 md:pl-0 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
    <div class="relative">
 
   <input type="checkbox" id="menu-toggle" class="peer hidden" />
@@ -25,18 +30,34 @@
   </label>
 
  <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-50 lg:mr-100">
-    <a href="accueil.html" class="text-gray-700 hover:text-black md:text-xl">Accueil</a>
-    <a href="catalogue.html" class="text-gray-700 hover:text-black md:text-xl">Catalogue</a>
-    <a href="contact.html" class="text-gray-700 hover:text-black md:text-xl">Contact</a>
+    <a href="accueil.html" class="text-gray-700 md:text-xl">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 md:text-xl">Catalogue</a>
+    <a href="contact.html" class="text-gray-700 md:text-xl">Contact</a>
   </nav>
-
+  
 </div>
     <div>
-      <img src="images/logo.png" class="w-40 mr-3 mt-2">
+      <img src="images/Gemini_Generated_Image_mb0nx1mb0nx1mb0n-removebg-preview 2.png" class="w-40 mr-3 mt-2">
     </div>
-    <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:flex md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-50 lg:mr-100">
+    <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:flex md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-60 lg:mr-110 gap-6">
+    <a href="accueil.html" class="md:text-xl border-b-2 border-[#315A46] text-green-700">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 md:text-xl hover:text-green-700">Catalogue</a>
+    <a href="contact.html" class="text-gray-700  md:text-xl hover:text-green-700">Contact</a>
+  </nav>
+    <div class="relative inline-block p-2 rounded-xl border border-gray-200 bg-white cursor-pointer">
+  <a href="panier.html"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+  </svg></a>
+  
+  
 
-
+  <span class="absolute -top-1 -right-1 bg-amber-700 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+    2
+  </span>
+</div>
+</div>
+    </div>
+    
   </header>
 
 
@@ -44,41 +65,49 @@
 <main class=" mx-auto w-full bg-[#FAF8F4] ">
 
   <div class="max-w-[1300px]">
-     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-[1fr_2fr_1fr] lg:gap-14 ">
+     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-[250px_minmax(0,1fr)_260px] lg:gap-10">
 
-  <img src="images/img-contacte.jpg" alt="céramique de la boutique" class="h-[80px] w-full object-cover md:w-[180px] md:h-full lg:w-[200px] lg:h-full lg:object-cover">
+            <img src="images/img-contacte.jpg" alt="céramique de la boutique"
+             class="h-[80px] w-full object-cover md:h-full  lg:h-full lg:w-full lg:object-cove">
 
 
 
 
    <section class="lg:mt-[60px]">
-  <h1 class="text-[36px] py-[20px] pl-[20px] font-bold ">Contact</h1>
-  <!--margin mb mt ml mr-->
-    <section>
-    <form action="#" method="post"  class="  m-auto block px-[21px] pt-[9px] "> 
+       <h1 class="text-[36px] py-[20px] pl-[20px] font-bold ">Contact</h1>
+ 
+        <section>
+               <form action="https://formsubmit.co/ayamakhfi233@email.com" method="post"  class=" px-[21px] pt-[9px] "> 
       
           <label for="nom" class="font-bold text-[14px] block mb-[10px] ">Nom complet</label>
-          <input id="nom" name="Nom" type="text" required class="block bg-white h-[33px] w-full rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[30px] lg:w-[450px]">
+          <input id="nom" name="Nom" type="text" placeholder="nom prénom" required 
+                  class="block bg-white h-[33px] w-full rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[30px] lg:w-[450px]">
        
 
        
            <label for="e-mail" class=" font-bold text-[14px] mb-[10px] block">E-mail</label>
-           <input id="e-mail" name="e-mail" type="email" required   class="block bg-white h-[33px] w-full  rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[30px] lg:w-[450px]">
+           <input id="e-mail" name="e-mail" type="email" placeholder="exemple@gmail.com" required   
+           class="block bg-white h-[33px] w-full  rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[30px] lg:w-[450px]
+            invalid:border-red-600
+           invalid:text-red-600
+           focus:invalid:border-red-600 
+           valid:border-green-600
+          valid:text-green-600
+           focus:valid:border-green-600">
       
 
-
-      
             <label for="message" class="font-bold text-[14px] mb-[10px] block">Message</label>
-            <textarea name="Message" rows="5" type="text" required  class="block bg-white h-[79px] w-full rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[20px] lg:w-[450px]"></textarea>
+            <textarea id="message"   name="Message" rows="5" type="text" placeholder="message"  class="block bg-white h-[79px] w-full rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[20px] lg:w-[450px]"></textarea>
      
-          </form>
-     <button type="submit" class=" m-[20px] rounded-[5px] bg-[#315A46] px-[9px] py-[5px] text-white ">Envoyez</button>
-  </section>
+       
+           <button type="submit" class=" m-[20px] rounded-[5px] bg-[#315A46] px-[9px] py-[5px] text-white ">Envoyez</button>
+           </form>
+        </section>
 
 
     
-      <h3 class="text-[22px] mb-[17px]">Suivez-nous sur nos réseaux sociaux:</h3>
-       <div >
+      <h3 class="text-[22px] mb-[17px] ml-3">Suivez-nous sur nos réseaux sociaux:</h3>
+      
         <ul class="flex ml-10 gap-[9px] mb-[40px]">
           <li>
             <a href="#"><img src="images/instagram.png" alt="instagram " class="mt-[4px] w-[20px]"></a>
@@ -87,38 +116,38 @@
             <a href="#"><img src="images/instagram1.png" alt="X " class="w-[28px] "></a>
           </li>
           <li>
-            <a href="#"><img src="images\youtube.png" alt="youtube page" class="w-[30px] mt-[4px]"></a>
+            <a href="#"><img src="images/youtube.png" alt="youtube page" class="w-[30px] mt-[4px]"></a>
           </li>
         </ul>
-         </div>
+        
          
 
-      </section>
+    </section>
 
 
 
    
-    <section class=" lg:mt-[160px]">
+    <section class="ml-[20px] md:ml-[20px]  lg:mt-[160px]">
 
       <!--1article-->
       <article class="flex mb-[20px] gap-[20px]" >
-          <img src="images/localisation.png" alt="localisation" class="w-[70px] h-[50px]">
+          <img src="images/localisation.png" alt="localisation" class="w-[70px] h-[50px] shrink-0">
           <div class="block">
            <h2 class="text-[17px] font-medium">Notre boutique</h2>
              <a href="#" class="text-[12] text-blue-500 ">123 Avenure hassan 2<br>
               SAFI ,Maroc<br>
                46000</a>
                </div>
-     </article>
+      </article>
 
-     <div class="mt-8 border-t border-[#EAEAE7] pt-5 md:mt-7  lg:mt-6"></div>
+     <div class="my-6 border-t border-[#DADFD9]"></div>
   
      <!--2 article-->
      <article class="flex mb-[40px] gap-[20px]">
-     <img src="images/temps.png" alt="horaire" class="w-[70px] h-[70px]">
-     <div class="block">
-     <h2 class="text-[17px] font-medium ">Horaires d’assistance</h2>
-       <ul class="text-[12] block">
+      <img src="images/temps.png" alt="horaire" class="w-[70px] h-[70px] shrink-0">
+        <div class="block">
+         <h2 class="text-[17px] font-medium ">Horaires d’assistance</h2>
+       <ul class="text-[12px] block">
         <li>Lundi-Vemdredi: 9h00-18h00</li>
         <li>Samedi: 9h00-17h00</li>
         <li>Dimenche: Fermé</li>
@@ -126,23 +155,87 @@
       </div>
        </article>
 
-       <div class="mt-8 border-t border-[#EAEAE7] pt-5 md:mt-7  lg:mt-6"></div>
+      <div class="my-6 border-t border-[#DADFD9]"></div>
 
 
      <!--3article-->
        <article class="flex mb-[40px] gap-[20px] " >
-        <img src="images/phone.png" alt="téléphone" class="w-[30px] h-[50px] ml-7 mr-4">
+        <img src="images/phone.png" alt="téléphone" class="w-[30px] h-[50px] shrink-0 ml-7 mr-4">
          <div class="block">
         <h2 class="text-[17px] font-medium">Téléphone</h2>
         <p>+212 678769023</p>
-      </div>
+        </div>
        </article>
     </section>
-     </div>
+  </div>
 </div>
 </main>
 
 
-</body>
+<footer class=" bg-white w-full  ">
+    <div class="mt-5 border-t border-[#EAEAE7] pt-5 md:mt-7  lg:mt-0">
 
+       <div class=" max-w-[1100px] mx-auto px-5 py-8  md:px-5 md:py-6 lg:px-0 lg:py-6 ">
+
+  <!--responsive-->
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr] lg:gap-9 ">
+
+             <section >
+                <img src="images/logo.png" alt="ifolki" class=" w-[120px] mb-5 ">
+
+                <p class="max-w-[300px]  text-[16px] text-[#626B65] leading-6 ">Maison dédiée aux métiers d'art français. Nous mettons en lumière des créations façonnées à la main.conçues pour traverser le temps avec justesse et authenticité.</p>
+             </section>
+
+
+
+             <section  class="mt-[27px]" >
+                 <h4 class="font-bold text-[16px] ">NAVIGATION</h4>
+                   <nav  class="  text-[#626B65] leading-7">
+                   <a href="#" class="block text-[16px] " >Accueil</a>
+                   <a href="#" class="block text-[16px] ">Catalogue de la saison</a>
+                   <a href="#" class="block text-[16px] ">Nos artisans partenaires</a>
+                    <a href="#" class="block text-[16px] " >Engagements et durabilité</a></nav> 
+            </section>
+
+
+
+
+
+              <section class="mt-[27px]" >
+                  <h4 class="font-bold text-[16px] ">AIDE & CONTACT</h4>
+                    <nav class="  text-[#626B65] leading-7 ">
+   
+                   <a href="#" class="block text-[16px] " > Nous contacter</a>
+                   <a href="#" class="block text-[16px] " > Questions fréquentes (FAQ)</a>
+                  <a href="#" class="block text-[16px]  " >Livraison & Retours </a>
+                  </nav>
+                  <a href="#" class="font-bold text-[16px]">test01@gmai.com</a>
+              </section>
+          </div>
+
+
+
+
+
+
+ 
+
+
+            <section class="mt-8  text-[#A3A3A3] text-[12px]">
+                <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between lg:flex-row lg:items-center lg:justify-between ">
+                  <p class="mb-1.5 lg:mb-0" >© 2026 ifolki. Tous droits réservés. Projet pédagogique e-commerce.</p>
+ 
+                    <nav class="flex flex-col gap-2 md:flex-row md:gap-4 ">
+                           <a href="#">Mentions légales</a>
+                           <a href="#">Politique de confidentialité</a>
+                           <a href="#">Conditions Générales de Vente</a> 
+                    </nav> 
+                </div>
+            </section>
+        </div>
+       </div>
+    
+
+
+   </footer>
 </html>
