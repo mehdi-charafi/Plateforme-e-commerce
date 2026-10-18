@@ -25,6 +25,7 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-light: 300;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
@@ -529,6 +530,9 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[1px\] {
+    font-size: 1px;
+  }
   .text-\[10px\] {
     font-size: 10px;
   }
@@ -543,6 +547,12 @@
   }
   .text-\[17px\] {
     font-size: 17px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
   }
   .text-\[36px\] {
     font-size: 36px;
@@ -571,6 +581,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .text-\[\#626B65\] {
     color: #626B65;
   }
@@ -582,6 +596,9 @@
   }
   .text-\[12\] {
     color: 12;
+  }
+  .text-\[px\] {
+    color: px;
   }
   .text-blue-500 {
     color: var(--color-blue-500);
