@@ -793,18 +793,7 @@
     }
   }
 }
-:root {
-  --color-primary: #315A46;
-  --color-secondary: #C58A55;
-  --color-background: #FAF8F4;
-  --color-surface: #FFFFFF;
-  --color-text-primary: #242824;
-  --color-text-secondary: #626B65;
-  --color-border: #DADFD9;
-  --color-success: #247A46;
-  --color-error: #B42318;
-  --couleur-texte-doux: #A3A3A3;
-}
+
 p,a,h4,ul {
   font-family: "Inter Regular";
 }
