@@ -24,6 +24,7 @@ Le site est développé  selon une approche mobile-first. Il s'agit d'une intég
 
 ## La bibliothèque de composants:
 réaliser par Mr. SOUFIANE 
+
 ![choix-de-champ](images/champ.png)
 ![choix-de-espace](images/Spacing-Scale.png)
 ![choix-de-couleurs](images/tableau%20de%20couleur.png)
@@ -37,7 +38,7 @@ réaliser par Mr. SOUFIANE
 ## Membres de l'équipe:
 -MAKHFI AYA 
 -CHARAFI MEHDI
--Youssef Boukacha
+-YOUSSEF BOUKAHCA
 
 
 
