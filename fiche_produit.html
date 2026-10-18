@@ -9,26 +9,55 @@
   <!-- Police Poppins (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <div class="en-tet-container flex justify-between items-center h-[60px] w-full border-b-1 bg-white px-20">
-      <p class="icon">Test Name</p>
-      <nav>
-        <ul class="flex gap-10 justify-center">
-          <li class="hover:text-green-700"><a href="#">Accuel</a></li>
-          <li class="text-green-700 hover:text-green-700"><a href="#">Catalogue</a></li>
-          <li class="hover:text-green-700"><a href="#">Contact</a></li>
-        </ul>
+<body class="font-['Poppins']">
+
+  <header class="flex pr-8 pl-3 md:pl-0 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
+    <div class="relative">
+
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+      <label for="menu-toggle" class="cursor-pointer block md:hidden p-2 text-gray-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </label>
+
+      <nav
+        class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-50 lg:mr-100">
+        <a href="accueil.html" class="text-gray-700 md:text-xl">Accueil</a>
+        <a href="catalogue.html" class="text-gray-700 md:text-xl">Catalogue</a>
+        <a href="contact.html" class="text-gray-700 md:text-xl">Contact</a>
       </nav>
+
+    </div>
+
+    <div>
+      <img src="images/ifolki-icon.png" alt="ifolki icon" class="w-40 mr-3 mt-2">
+    </div>
+
+    <nav
+      class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:flex md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-60 lg:mr-110 gap-6">
+      <a href="accueil.html" class="text-gray-700 md:text-xl hover:text-green-700">Accueil</a>
+      <a href="catalogue.html" class="md:text-xl border-b-2 border-[#315A46] text-green-700">Catalogue</a>
+      <a href="contact.html" class="text-gray-700 md:text-xl hover:text-green-700">Contact</a>
+    </nav>
+
+    <div class="relative inline-block p-2 rounded-xl border border-gray-200 bg-white cursor-pointer">
       <a href="panier.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24"
           stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
         </svg>
       </a>
+
+      <span
+        class="absolute -top-1 -right-1 bg-amber-700 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+        2
+      </span>
     </div>
 
   </header>
@@ -36,147 +65,311 @@
 
 
 
-  <main class="bg-[var(--color-background)] p-4">
+
+  <main class="bg-[var(--color-background)] px-4 py-6 lg:px-8">
+    <div class="max-w-[1200px] mx-auto">
 
 
 
 
-    <nav class="flex gap-4 text-sm" aria-label="Fil d'Ariane">
-      <a class="text-[var(--color-text-secondary)]" href="#">Accueil</a>
-      <span class="text-[var(--color-border)]">/</span>
-      <a class="text-[var(--color-text-secondary)]" href="#">Catalogue</a>
-      <span class="text-[var(--color-border)]">/</span>
-      <span class="text-[var(--color-text-primary)]" aria-current="page">Vase Alba</span>
-    </nav>
+      <nav class="flex gap-2 text-sm" aria-label="Fil d'Ariane">
+        <a class="text-[var(--color-text-secondary)]" href="#">Accueil</a>
+        <span class="text-[var(--color-border)]">/</span>
+        <a class="text-[var(--color-text-secondary)]" href="#">Catalogue</a>
+        <span class="text-[var(--color-border)]">/</span>
+        <span class="text-[var(--color-text-primary)]" aria-current="page">Vase Alba</span>
+      </nav>
 
 
 
-    <section class="flex flex-col lg:flex-row gap-5 mt-6">
-      <div class="flex flex-col gap-3 w-full lg:w-1/2">
-        <div class="aspect-square">
-          <img class="w-full h-full object-cover" src="" alt="">
-        </div>
-        <div>
-          <ul class="flex gap-2">
-            <li class="flex-1 aspect-square"><img class="w-full h-full object-cover" src="" alt=""></li>
-            <li class="flex-1 aspect-square"><img class="w-full h-full object-cover" src="" alt=""></li>
-            <li class="flex-1 aspect-square"><img class="w-full h-full object-cover" src="" alt=""></li>
-            <li class="flex-1 aspect-square"><img class="w-full h-full object-cover" src="" alt=""></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="w-full lg:w-1/2">
-
-        <p>CÉRAMIQUE ARTISANALE</p>
-        <h1>Vase en céramique Alba</h1>
-        <p>349 MAD <span>TVA incluse</span>
-        </p>
-        <p>Un vase en céramique façonné à la main, aux lignes épurées et à la finition naturelle. Chaque pièce est
-          unique et apporte une touche authentique à votre intérieur.</p>
-
-        <p>Quantité</p>
-        <div>
-          <button type="button" aria-label="Diminuer la quantité">−</button>
-          <span>1</span>
-          <button type="button" aria-label="Augmenter la quantité">+</button>
-        </div>
-
-        <button type="button">Ajouter au panier</button>
-
-
-        <h2>Caractéristiques de l'objet</h2>
-        <dl>
-          <dt>Matière :</dt>
-          <dd>Céramique</dd>
-
-          <dt>Fabrication :</dt>
-          <dd>Artisanale</dd>
-
-          <dt>Dimensions :</dt>
-          <dd>24 × 14 cm</dd>
-
-          <dt>Couleur :</dt>
-          <dd>Beige naturel</dd>
-        </dl>
-
-        <div>
-          <div>
-            <img src="" alt="">
-            <p>Colis protégé zéro casse</p>
+      <section class="flex flex-col lg:flex-row lg:items-start gap-5 lg:gap-[89px] mt-6">
+        <div class="flex flex-col gap-3 w-full lg:flex-[1.3] lg:min-w-0">
+          <div class="aspect-square rounded-[8px] overflow-hidden border border-[var(--color-border)]">
+            <img class="w-full h-full object-cover" src="images/prodiut1.png"
+              alt="Vase Alba en céramique beige, vue principale">
           </div>
           <div>
-            <img src="" alt="">
-            <p>Retours sous 14 jours</p>
+            <ul class="flex gap-2">
+              <li class="flex-1 aspect-square rounded-[8px] overflow-hidden border border-[var(--color-border)]"><img
+                  class="w-full h-full object-cover" src="images/prodiut1v2.png"
+                  alt="Vase Alba en céramique, deuxième vue"></li>
+              <li class="flex-1 aspect-square rounded-[8px] overflow-hidden border border-[var(--color-border)]"><img
+                  class="w-full h-full object-cover" src="images/prodiut1v3.png"
+                  alt="Vase Alba en céramique, troisième vue"></li>
+              <li class="flex-1 aspect-square rounded-[8px] overflow-hidden border border-[var(--color-border)]"><img
+                  class="w-full h-full object-cover" src="images/prodiut1v1.png"
+                  alt="Vase Alba en céramique, quatrième vue"></li>
+              <li class="flex-1 aspect-square rounded-[8px] overflow-hidden border border-[var(--color-border)]"><img
+                  class="w-full h-full object-cover" src="images/prodiut1.png"
+                  alt="Vase Alba en céramique, vue principale"></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
 
 
+        <div
+          class="w-full lg:flex-1 lg:min-w-0 bg-white rounded-xl p-5 border border-[var(--color-border)] shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
 
-
-    <section>
-      <div>
-        <p>HARMONIE D'ATELIER</p>
-        <h2>Vous aimerez aussi</h2>
-        <a href="#">Voir toute la collection céramique <span>></span></a>
-      </div>
-      <div>
-        <article>
-          <img src="" alt="Bol en céramique Sable">
-          <p>Art de la table</p>
-          <div>
-            <h3>Bol en céramique Sable</h3>
-            <p>Grès texturé aux nuances dorées, idéal pour les rituels du matin ou en coupe de présentation.</p>
+          <p class="text-sm font-semibold text-[var(--color-secondary)]">CÉRAMIQUE ARTISANALE</p>
+          <h1 class="mt-2 text-2xl lg:text-3xl font-bold text-[var(--color-text-primary)]">Vase en céramique Alba</h1>
+          <p class="text-xl font-semibold text-[var(--color-primary)]">349 MAD <span
+              class="text-xs font-normal text-[var(--color-text-secondary)]">TVA incluse</span>
+          </p>
+          <p
+            class="mt-3 font-['Inter'] text-[15px] font-normal leading-6 tracking-normal text-[var(--color-text-secondary)]">
+            Un vase en céramique façonné à la main, aux
+            lignes épurées et à la finition naturelle. Chaque pièce est
+            unique et apporte une touche authentique à votre intérieur.</p>
+          <div class="flex flex-col gap-3 w-full pr-1 mt-4">
+            <p class="font-['Inter'] text-xs font-normal leading-4 tracking-normal text-[var(--color-text-primary)]">
+              Quantité</p>
+            <div class="flex items-center w-[102px] h-9 px-1 bg-white border border-[var(--color-border)] rounded-lg">
+              <button type="button" class="flex-1 text-[var(--color-text-secondary)]"
+                aria-label="Diminuer la quantité">−</button>
+              <span class="flex-1 text-center text-[var(--color-text-primary)]">1</span>
+              <button type="button" class="flex-1 text-[var(--color-text-secondary)]"
+                aria-label="Augmenter la quantité">+</button>
+            </div>
+            <button type="button"
+              class="flex items-center justify-center gap-2 w-full h-11 rounded-lg bg-[var(--color-primary)] text-white shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+              <img src="images/shopping-bag.svg" alt="" class="w-5 h-5">
+              <span class="font-['Inter'] text-base font-normal leading-6 tracking-normal text-white">
+                Ajouter au panier
+              </span></button>
           </div>
-          <div>
-            <p>189 MAD</p>
-            <a href="#">Voir le produit <span>></span></a>
+
+
+          <h2
+            class="mt-5 border-t border-[var(--color-border)] pt-4 font-semibold text-base text-[var(--color-text-primary)]">
+            Caractéristiques de l'objet</h2>
+
+          <dl class="flex flex-col gap-3 mt-4 font-['Inter'] text-sm">
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-[var(--color-text-secondary)]">Matière :</dt>
+              <dd class="text-[var(--color-text-primary)]">Céramique</dd>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-[var(--color-text-secondary)]">Fabrication :</dt>
+              <dd class="text-[var(--color-text-primary)]">Artisanale</dd>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-[var(--color-text-secondary)]">Dimensions :</dt>
+              <dd class="text-[var(--color-text-primary)]">24 × 14 cm</dd>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <dt class="text-[var(--color-text-secondary)]">Couleur :</dt>
+              <dd class="text-[var(--color-text-primary)]">Beige naturel</dd>
+            </div>
+          </dl>
+
+
+
+
+
+          <div class="flex items-center justify-between gap-2 mt-5 pt-4 border-t border-[var(--color-border)]">
+
+            <div class="flex items-center gap-2">
+              <img src="images/check.svg" alt="" class="w-5 h-5">
+              <p class="font-['Inter'] text-sm text-[var(--color-text-secondary)]">
+                Colis protégé zéro casse
+              </p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <img src="images/rotate-ccw.svg" alt="" class="w-5 h-5">
+              <p class="font-['Inter'] text-sm text-[var(--color-text-secondary)]">
+                Retours sous 14 jours
+              </p>
+            </div>
+
           </div>
-        </article>
 
-        <article>
-          <img src="" alt="Bol en céramique Sable">
-          <p>Art de la table</p>
-          <div>
-            <h3>Bol en céramique Sable</h3>
-            <p>Grès texturé aux nuances dorées, idéal pour les rituels du matin ou en coupe de présentation.</p>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="mt-12">
+
+
+        <div class="flex items-end justify-between gap-3 mb-6">
+
+          <div class="flex flex-col gap-2">
+            <p class="text-xs font-semibold tracking-widest text-[var(--color-secondary)]">
+              HARMONIE D'ATELIER
+            </p>
+
+            <h2 class="text-xl md:text-2xl font-semibold text-[var(--color-text-primary)]">
+              Vous aimerez aussi
+            </h2>
           </div>
-          <div>
-            <p>189 MAD</p>
-            <a href="#">Voir le produit <span>></span></a>
-          </div>
-        </article>
 
-        <article>
-          <img src="" alt="Bol en céramique Sable">
-          <p>Art de la table</p>
-          <div>
-            <h3>Bol en céramique Sable</h3>
-            <p>Grès texturé aux nuances dorées, idéal pour les rituels du matin ou en coupe de présentation.</p>
-          </div>
-          <div>
-            <p>189 MAD</p>
-            <a href="#">Voir le produit <span>></span></a>
-          </div>
-        </article>
+          <a href="#" class="shrink-0 font-['Inter'] text-xs md:text-sm text-[var(--color-primary)]">
+            <span class="md:hidden">Voir toute</span>
+            <span class="hidden md:inline">Voir toute la collection céramique</span>
+            <span>></span>
+          </a>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          <article class="flex flex-col bg-white rounded-xl border border-[var(--color-border)] overflow-hidden">
+            <img src="" alt="Bol en céramique Sable" class="block w-full aspect-[4/3] object-cover">
+
+            <div class="px-4 mt-2 pb-4">
+              <h3 class="text-lg font-semibold text-[var(--color-text-primary)]">
+                Bol en céramique Sable
+              </h3>
+              <p class="mt-2 font-['Inter'] text-sm leading-6 text-[var(--color-text-secondary)]">
+                Grès texturé aux nuances dorées, idéal pour les rituels du matin ou en coupe de présentation.
+              </p>
+            </div>
+
+            <div
+              class="flex items-center justify-between gap-3 mx-4 mt-auto mb-4 pt-4 border-t border-[var(--color-border)]">
+              <p class="text-lg font-semibold text-[var(--color-primary)]">
+                189 MAD
+              </p>
+              <a href="#" class="font-['Inter'] text-sm font-semibold text-[var(--color-primary)]">
+                Voir le produit <span>></span>
+              </a>
+            </div>
+
+          </article>
+
+          <article class="flex flex-col bg-white rounded-xl border border-[var(--color-border)] overflow-hidden">
+            <img src="" alt="Bol en céramique Sable" class="block w-full aspect-[4/3] object-cover">
+
+            <div class="px-4 mt-2 pb-4">
+              <h3 class="text-lg font-semibold text-[var(--color-text-primary)]">
+                Bol en céramique Sable
+              </h3>
+              <p class="mt-2 font-['Inter'] text-sm leading-6 text-[var(--color-text-secondary)]">
+                Grès texturé aux nuances dorées, idéal pour les rituels du matin ou en coupe de présentation.
+              </p>
+            </div>
+
+            <div
+              class="flex items-center justify-between gap-3 mx-4 mt-auto mb-4 pt-4 border-t border-[var(--color-border)]">
+              <p class="text-lg font-semibold text-[var(--color-primary)]">
+                189 MAD
+              </p>
+              <a href="#" class="font-['Inter'] text-sm font-semibold text-[var(--color-primary)]">
+                Voir le produit <span>></span>
+              </a>
+            </div>
+
+          </article>
+
+          <article class="flex flex-col bg-white rounded-xl border border-[var(--color-border)] overflow-hidden">
+            <img src="" alt="Bol en céramique Sable" class="block w-full aspect-[4/3] object-cover">
+
+            <div class="px-4 mt-2 pb-4">
+              <h3 class="text-lg font-semibold text-[var(--color-text-primary)]">
+                Bol en céramique Sable
+              </h3>
+              <p class="mt-2 font-['Inter'] text-sm leading-6 text-[var(--color-text-secondary)]">
+                Grès texturé aux nuances dorées, idéal pour les rituels du matin ou en coupe de présentation.
+              </p>
+            </div>
+
+            <div
+              class="flex items-center justify-between gap-3 mx-4 mt-auto mb-4 pt-4 border-t border-[var(--color-border)]">
+              <p class="text-lg font-semibold text-[var(--color-primary)]">
+                189 MAD
+              </p>
+              <a href="#" class="font-['Inter'] text-sm font-semibold text-[var(--color-primary)]">
+                Voir le produit <span>></span>
+              </a>
+            </div>
+
+          </article>
 
 
 
-      </div>
+        </div>
 
 
 
 
 
-    </section>
+      </section>
 
 
-
+    </div>
   </main>
 
 
+
+  <footer class="bg-white w-full">
+    <div class="mt-5 border-t border-[#EAEAE7] pt-5 md:mt-7 lg:mt-0">
+
+      <div class="max-w-[1100px] mx-auto px-5 py-8 md:px-5 md:py-6 lg:px-0 lg:py-6">
+
+        <!-- responsive -->
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr] lg:gap-9">
+
+          <section>
+            <img src="images/logo.png" alt="ifolki" class="w-[120px] mb-5">
+
+            <p class="max-w-[300px] text-[16px] text-[#626B65] leading-8">
+              Maison dédiée aux métiers d'art français. Nous mettons en lumière des créations façonnées à la
+              main.conçues pour traverser le temps avec justesse et authenticité.
+            </p>
+          </section>
+
+          <section class="mt-[27px]">
+            <h4 class="font-bold text-[16px]">NAVIGATION</h4>
+
+            <nav class="text-[#626B65] leading-7">
+              <a href="#" class="block text-[16px] pb-[8px]">Accueil</a>
+              <a href="#" class="block text-[16px] pb-[8px]">Catalogue de la saison</a>
+              <a href="#" class="block text-[16px] pb-[8px]">Nos artisans partenaires</a>
+              <a href="#" class="block text-[16px]">Engagements et durabilité</a>
+            </nav>
+          </section>
+
+          <section class="mt-[27px]">
+            <h4 class="font-bold text-[16px]">AIDE & CONTACT</h4>
+
+            <nav class="text-[#626B65] leading-7">
+              <a href="#" class="block text-[16px] pb-[8px]">Nous contacter</a>
+              <a href="#" class="block text-[16px] pb-[8px]">Questions fréquentes (FAQ)</a>
+              <a href="#" class="block text-[16px] pb-[8px]">Livraison & Retours</a>
+            </nav>
+
+            <a href="#" class="font-bold text-[16px]">test01@gmai.com</a>
+          </section>
+
+        </div>
+
+        <section class="mt-8 text-[#A3A3A3] text-[12px]">
+          <div
+            class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between lg:flex-row lg:items-center lg:justify-between">
+
+            <p class="mb-1.5 lg:mb-0">
+              © 2026 ifolki. Tous droits réservés. Projet pédagogique e-commerce.
+            </p>
+
+            <nav class="flex flex-col gap-2 md:flex-row md:gap-4">
+              <a href="#">Mentions légales</a>
+              <a href="#">Politique de confidentialité</a>
+              <a href="#">Conditions Générales de Vente</a>
+            </nav>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </footer>
 
 
 
