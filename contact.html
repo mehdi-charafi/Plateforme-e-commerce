@@ -81,30 +81,26 @@
       
           <label for="nom" class="text-[16px] block mb-[8px] ">Nom complet</label>
           <input id="nom" name="Nom" type="text" placeholder="nom prénom" required 
-                  class="block bg-white h-[33px] w-full rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[24px] lg:w-[450px]"
+                  class="block bg-white h-[33px] w-full rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[24px] lg:w-[450px]">
                   
-                 ><!--navigation par calvier-->
+                 
        
 
        
            <label for="e-mail" class="  text-[16px] mb-[10px] block">E-mail</label>
-           <input id="e-mail" name="e-mail" type="email" placeholder="exemple@gmail.com" required   
-           class="block bg-white h-[33px] w-full  rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[24px] lg:w-[450px]
-           invalid:text-red-600
-           focus:invalid:border-red-600 
-           valid:border-green-600
-          valid:text-green-600
-           focus:valid:border-green-600
-           
-            focus-visible:outline-2
-             "><!--navigation par calvier-->
+           <input id="e-mail" name="e-mail" type="email" placeholder="exemple@gmail.com" aria-describedby="email-erreur" required   
+           class="peer block bg-white h-[33px] w-full  rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[24px] lg:w-[450px]
+          
+            focus-visible:outline-2">
+
+            <p id="email-erreur" class=" hidden text-[12px] text-[#B42318] mt-2  peer-[&:not(:placeholder-shown):invalid]:block"> Veuillez saisir une adresse e-mail valide.</p>
       
 
             <label for="message" class=" text-[16px] mb-[10px] block">Message</label>
-            <textarea id="message"   name="Message" rows="5" type="text" placeholder="message"  class="block bg-white h-[79px] w-full rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[20px] lg:w-[450px]
+            <textarea id="message"   name="Message" rows="5" type="text" placeholder="message" required class="block bg-white h-[79px] w-full rounded-[6px] border border-[#DADFD9] text-[10px] px-[10px] mb-[20px] lg:w-[450px]
             
-             focus-visible:outline-2
-             "></textarea>
+             focus-visible:outline-2">
+             </textarea>
      
        
            <button type="submit" class=" m-[20px] rounded-[5px] bg-[#315A46] px-[9px] py-[5px] text-white
@@ -141,7 +137,7 @@
 
       <!--1article-->
       <article class="flex mb-[24px] gap-[8px]" >
-          <img src="images/localisation.png" alt="localisation" class="w-[70px] h-[80px] ">
+          <img src="images/localisation.png" alt="localisation" class="w-[50px] h-[60px] ">
           <div class="block">
            <h3 class="text-[17px] font-medium mb-[4px]">Notre boutique</h3>
              <a href="#" class="text-[12] text-blue-500 ">123 Avenure hassan 2<br>
@@ -154,7 +150,7 @@
   
      <!--2 article-->
      <article class="flex mb-[24px] gap-[8px]">
-      <img src="images/temps.png" alt="horaire" class="w-[70px] h-[70px] ">
+      <img src="images/temps.png" alt="horaire" class="w-[50px] h-[50px] ">
         <div class="block">
          <h3 class="text-[17px] font- mb-[4px] ">Horaires d’assistance</h3>
        <ul class="text-[14px] block">
@@ -170,7 +166,7 @@
 
      <!--3article-->
        <article class="flex mb-[22px] gap-[8px] " >
-        <img src="images/phone.png" alt="téléphone" class="w-[30px] h-[50px] shrink-0 ml-7 mr-4">
+        <img src="images/phone.png" alt="téléphone" class="w-[30px] h-[50px] shrink-0 ml-5 mr-4">
          <div class="block">
         <h3 class="text-[17px] font-medium mb-[4px]">Téléphone</h3>
         <p>+212 678769023</p>
