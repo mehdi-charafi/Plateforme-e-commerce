@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+
+
+p,a,h4,ul{
+  font-family: "Inter Regular";
+}
+ 
+h3{
+  font-family:"Poppins Medium";
+}
+
+h1,h2{font-family:"Poppins SemiBold";}
+
+input[type="email"]:not(:placeholder-shown):invalid {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+input[type="email"]:not(:placeholder-shown):valid {
+  border-color: #16a34a;
+  color: #16a34a;
+}
+
+
+
+
+
 @theme {
   --font-poppins: "Poppins", sans-serif;
 }
