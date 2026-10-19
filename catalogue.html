@@ -1,13 +1,170 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - ifoulki.ma</title>
+    <link rel="stylesheet" href="css/output.css">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+
+<body class="bg-gray-100 text-gray-900">
+<header class="flex pr-8 pl-3 md:pl-0 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
+  <div class="relative">
+  <input type="checkbox" id="menu-toggle" class="peer hidden" />
+  <label for="menu-toggle" class="cursor-pointer block md:hidden p-2 text-gray-700">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </label>
+ <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-50 lg:mr-100">
+    <a href="accueil.html" class="text-gray-700 md:text-xl">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 md:text-xl">Catalogue</a>
+    <a href="contact.html" class="text-gray-700 md:text-xl">Contact</a>
+  </nav> 
+</div>
+    <div>
+      <img src="images/Gemini_Generated_Image_mb0nx1mb0nx1mb0n-removebg-preview 2.png" class="w-40 mr-3 mt-2">
+    </div>
+    <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:flex md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-60 lg:mr-110 gap-6">
+    <a href="accueil.html" class="md:text-xl border-b-2 border-[#315A46] text-green-700">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 md:text-xl hover:text-green-700">Catalogue</a>
+    <a href="contact.html" class="text-gray-700  md:text-xl hover:text-green-700">Contact</a>
+  </nav>
+    <div class="relative inline-block p-2 rounded-xl border border-gray-200 bg-white cursor-pointer">
+  <a href="panier.html"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+  </svg></a>
+  <span class="absolute -top-1 -right-1 bg-amber-700 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+    2
+  </span>
+  </div></div></div>
+</header>
+
+<main class="mx-auto max-w-7xl px-4 py-6 md:px-8 md:py-10">
+    <h1 class="mb-2 text-2xl font-bold md:text-3xl">Nos créations artisanales</h1>
+    <p class="mb-5 text-sm text-gray-500">Découvrez notre sélection de créations uniques, réalisées avec soin et passion.</p>
+    <div class="mb-6 flex flex-wrap gap-2">
+        <a href="#produits"class="rounded-md bg-[#315c49] px-4 py-2 text-xs text-white">Tous les produits</a>
+        <a href="#ceramique"class="rounded-md border border-gray-200 bg-white px-4 py-2 text-xs hover:bg-gray-100">Céramique</a>
+        <a href="#decoration"class="rounded-md border border-gray-200 bg-white px-4 py-2 text-xs hover:bg-gray-100">Décoration</a>
+        <a href="#textile"class="rounded-md border border-gray-200 bg-white px-4 py-2 text-xs hover:bg-gray-100">Textile</a>
+    </div>
+
+
+    <section id="produits"aria-label="Catalogue des produits"class="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 xl:grid-cols-4">
+        <article id="ceramique" class="overflow-hidden rounded-md bg-white">
+        <img src="img/magnific__generate-4-different-angles-of-this-image-front-th__69180.png"alt="a"class="h-32 w-full bg-gray-200 object-cover md:h-48">
+        <div class="p-3">
+        <h2 class="mt-3 text-sm font-semibold">Bol en céramique vert</h2>
+        <p class="mt-1 text-xs text-gray-500">Grès chamotté minéral cuit à haute température.</p>
+        <p class="mt-3 font-bold text-[#315c49]">169.00 MAD</p>
+        <a href="page3.html"class="mt-3 block border-t border-gray-100 pt-3 text-xs text-center text-[#315c49] hover:underline">Voir le produit </a>
+        </div></article>
+
+        <article id="ceramique" class="overflow-hidden rounded-md bg-white">
+        <img src="img/magnific__photorealistic-premium-ecommerce-catalog-photograp__47728.png"alt="a"class="h-32 w-full bg-gray-200 object-cover md:h-48">
+        <div class="p-3">
+        <h2 class="mt-3 text-sm font-semibold">Vase en terre cuite épuré</h2>
+        <p class="mt-1 text-xs text-gray-500">Grès chamotté minéral cuit à haute température.</p>
+        <p class="mt-3 font-bold text-[#315c49]">220.00 MAD</p>
+        <a href="page3.html"class="mt-3 block border-t border-gray-100 pt-3 text-xs text-center text-[#315c49] hover:underline">Voir le produit </a>
+        </div></article>
+
+        <article id="ceramique" class="overflow-hidden rounded-md bg-white">
+        <img src="img/Ornate_Asian_Porcelain_Vase.png"alt="a"class="h-32 w-full bg-gray-200 object-cover md:h-48">
+        <div class="p-3">
+        <h2 class="mt-3 text-sm font-semibold">Vase en céramique décoré</h2>
+        <p class="mt-1 text-xs text-gray-500">Grès chamotté minéral cuit à haute température.</p>
+        <p class="mt-3 font-bold text-[#315c49]">189.00 MAD</p>
+        <a href="page3.html"class="mt-3 block border-t border-gray-100 pt-3 text-xs text-center text-[#315c49] hover:underline">Voir le produit </a>
+        </div></article>
+
+        <article id="ceramique" class="overflow-hidden rounded-md bg-white">
+        <img src="img/gallery-11.webp"alt="a"class="h-32 w-full bg-gray-200 object-cover md:h-48">
+        <div class="p-3">
+        <h2 class="mt-3 text-sm font-semibold">bols céramique marocaine</h2>
+        <p class="mt-1 text-xs text-gray-500">Grès chamotté minéral cuit à haute température.</p>
+        <p class="mt-3 font-bold text-[#315c49]">69.00 MAD</p>
+        <a href="page3.html"class="mt-3 block border-t border-gray-100 pt-3 text-xs text-center text-[#315c49] hover:underline">Voir le produit </a>
+        </div></article>
+
+        <article id="ceramique" class="overflow-hidden rounded-md bg-white">
+        <img src="img/gallery-9.webp"alt="a"class="h-32 w-full bg-gray-200 object-cover md:h-48">
+        <div class="p-3">
+        <h2 class="mt-3 text-sm font-semibold">Plat décoratif en céramique</h2>
+        <p class="mt-1 text-xs text-gray-500">Grès chamotté minéral cuit à haute température.</p>
+        <p class="mt-3 font-bold text-[#315c49]">179.00 MAD</p>
+        <a href="page3.html"class="mt-3 block border-t border-gray-100 pt-3 text-xs text-center text-[#315c49] hover:underline">Voir le produit </a>
+        </div></article>
+
+        <article id="ceramique" class="overflow-hidden rounded-md bg-white">
+        <img src="img/a6a3b1ad680a391c.webp"alt="a"class="h-32 w-full bg-gray-200 object-cover md:h-48">
+        <div class="p-3">
+        <h2 class="mt-3 text-sm font-semibold">Mini tajines en céramique</h2>
+        <p class="mt-1 text-xs text-gray-500">Grès chamotté minéral cuit à haute température.</p>
+        <p class="mt-3 font-bold text-[#315c49]">399.00 MAD</p>
+        <a href="page3.html"class="mt-3 block border-t border-gray-100 pt-3 text-xs text-center text-[#315c49] hover:underline">Voir le produit </a>
+        </div></article>
+
+        <article id="ceramique" class="overflow-hidden rounded-md bg-white">
+        <img src="img/gallery-5.webp"alt="a"class="h-32 w-full bg-gray-200 object-cover md:h-48">
+        <div class="p-3">
+        <h2 class="mt-3 text-sm font-semibold">Photophore en métal perforé</h2>
+        <p class="mt-1 text-xs text-gray-500">Grès chamotté minéral cuit à haute température.</p>
+        <p class="mt-3 font-bold text-[#315c49]">299.00 MAD</p>
+        <a href="page3.html"class="mt-3 block border-t border-gray-100 pt-3 text-xs text-center text-[#315c49] hover:underline">Voir le produit </a>
+        </div></article>
+
+        <article id="ceramique" class="overflow-hidden rounded-md bg-white">
+        <img src="img/gallery-11_1.webp"alt="a"class="h-32 w-full bg-gray-200 object-cover md:h-48">
+        <div class="p-3">
+        <h2 class="mt-3 text-sm font-semibold">Lanterne marocaine traditionnelle en cuivr</h2>
+        <p class="mt-1 text-xs text-gray-500">Grès chamotté minéral cuit à haute température.</p>
+        <p class="mt-3 font-bold text-[#315c49]">449.00 MAD</p>
+        <a href="page3.html"class="mt-3 block border-t border-gray-100 pt-3 text-xs text-center text-[#315c49] hover:underline">Voir le produit </a>
+        </div></article>
+        </section>
+    </main>
+
+<footer class=" bg-white w-full  ">
+    <div class="mt-5 border-t border-[#EAEAE7] pt-5 md:mt-7  lg:mt-0">
+       <div class=" max-w-[1100px] mx-auto px-5 py-8  md:px-5 md:py-6 lg:px-0 lg:py-6 ">
+  <!--responsive-->
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr] lg:gap-9 ">
+             <section >
+                <img src="images/logo.png" alt="ifolki" class=" w-[120px] mb-5 ">
+                <p class="max-w-[300px]  text-[16px] text-[#626B65] leading-8 ">Maison dédiée aux métiers d'art français. Nous mettons en lumière des créations façonnées à la main.conçues pour traverser le temps avec justesse et authenticité.</p>
+             </section>
+             <section  class="mt-[27px]" >
+                 <h4 class="font-bold text-[16px] ">NAVIGATION</h4>
+                   <nav  class="  text-[#626B65] leading-7 ">
+                   <a href="#" class="block text-[16px] pb-[8px]" >Accueil</a>
+                   <a href="#" class="block text-[16px] pb-[8px]">Catalogue de la saison</a>
+                   <a href="#" class="block text-[16px] pb-[8px]">Nos artisans partenaires</a>
+                    <a href="#" class="block text-[16px] " >Engagements et durabilité</a></nav> 
+            </section>
+              <section class="mt-[27px]" >
+                  <h4 class="font-bold text-[16px] ">AIDE & CONTACT</h4>
+                    <nav class="  text-[#626B65] leading-7 ">
+                   <a href="#" class="block text-[16px] pb-[8px] " > Nous contacter</a>
+                   <a href="#" class="block text-[16px] pb-[8px] " > Questions fréquentes (FAQ)</a>
+                  <a href="#" class="block text-[16px] pb-[8px] " >Livraison & Retours </a>
+                  </nav>
+                  <a href="#" class="font-bold text-[16px]">test01@gmai.com</a>
+              </section>
+          </div>
+            <section class="mt-8  text-[#A3A3A3] text-[12px]">
+                <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between lg:flex-row lg:items-center lg:justify-between ">
+                  <p class="mb-1.5 lg:mb-0" >© 2026 ifolki. Tous droits réservés. Projet pédagogique e-commerce.</p>
+ 
+                    <nav class="flex flex-col gap-2 md:flex-row md:gap-4 ">
+                           <a href="#">Mentions légales</a>
+                           <a href="#">Politique de confidentialité</a>
+                           <a href="#">Conditions Générales de Vente</a> 
+                    </nav> 
+                </div>
+            </section>
+        </div>
+       </div>
+</footer>
 </html>
