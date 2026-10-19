@@ -23,7 +23,7 @@ Le site est développé  selon une approche mobile-first. Il s'agit d'une intég
 -Contact : formulaire de contact, coordonnées et horaires d'assistance.
 
 ## La bibliothèque de composants:
-réaliser par Mr. SOUFIANE 
+réaliser par Mr. SOUFIANE AMOUSSE 
 
 ![choix-de-champ](images/champ.png)
 ![choix-de-espace](images/Spacing-Scale.png)
