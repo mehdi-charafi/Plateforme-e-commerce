@@ -632,6 +632,10 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
   .border-b-1 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
@@ -642,6 +646,9 @@
   }
   .border-\[\#315A46\] {
     border-color: #315A46;
+  }
+  .border-\[\#C58A55\] {
+    border-color: #C58A55;
   }
   .border-\[\#DADFD9\] {
     border-color: #DADFD9;
@@ -667,6 +674,9 @@
   .bg-\[\#FAF8F4\] {
     background-color: #FAF8F4;
   }
+  .bg-\[\#FFFFFF\] {
+    background-color: #FFFFFF;
+  }
   .bg-\[var\(--color-background\)\] {
     background-color: var(--color-background);
   }
@@ -687,6 +697,12 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\'\.\.\/ima\'\)\] {
+    background-image: url('../ima');
+  }
+  .bg-\[url\(\'\.\.\/images\/Frame\.png\'\)\] {
+    background-image: url('../images/Frame.png');
   }
   .bg-cover {
     background-size: cover;
@@ -916,6 +932,9 @@
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
   }
+  .text-\[\#315A46\] {
+    color: #315A46;
+  }
   .text-\[\#315c49\] {
     color: #315c49;
   }
@@ -930,6 +949,12 @@
   }
   .text-\[\#B42318\] {
     color: #B42318;
+  }
+  .text-\[\#C58A55\] {
+    color: #C58A55;
+  }
+  .text-\[\#FFCE31\] {
+    color: #FFCE31;
   }
   .text-\[var\(--color-border\)\] {
     color: var(--color-border);
@@ -995,6 +1020,9 @@
   @media (hover: hover) {
     .hover\:bg-gray-100:hover {
       background-color: var(--color-gray-100);
+    }
+    .hover\:text-black:hover {
+      color: var(--color-black);
     }
     .hover\:text-green-700:hover {
       color: var(--color-green-700);
@@ -1152,6 +1180,10 @@
     .md\:text-xl {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+    .md\:font-semibold {
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
     }
     .md\:shadow-none {
       --tw-shadow: 0 0 #0000;
