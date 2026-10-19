@@ -18,7 +18,11 @@
     "url": "https://github.com/mehdi-charafi/Plateforme-e-commerce/issues"
   },
   "homepage": "https://github.com/mehdi-charafi/Plateforme-e-commerce#readme",
+<<<<<<< HEAD
   "dependencies": {
+=======
+  "devDependencies": {
+>>>>>>> ed0155bb72115852305c2270fa0b438764cc0dcd
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
   }

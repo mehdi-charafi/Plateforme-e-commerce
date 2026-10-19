@@ -1,13 +1,187 @@
 <!doctype html>
 <html>
 <head>
+  <link rel="stylesheet" href="./css/output.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/output.css" rel="stylesheet">
 </head>
+
+                          <!-------------------header---------------------->
+<header class="flex pr-8 pl-3 md:pl-0 bg-white w-full h-15 border-b-2 border-[#DADFD9] items-center justify-between">
+   <div class="relative">
+
+  <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+
+  <label for="menu-toggle" class="cursor-pointer block md:hidden p-2 text-gray-700">
+
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </label>
+
+ <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-50 lg:mr-100">
+    <a href="accueil.html" class="text-gray-700 hover:text-black md:text-xl">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 hover:text-black md:text-xl">Catalogue</a>
+    <a href="contact.html" class="text-gray-700 hover:text-black md:text-xl">Contact</a>
+  </nav>
+  
+</div>
+    <div>
+      <img src="images/Gemini_Generated_Image_mb0nx1mb0nx1mb0n-removebg-preview 2.png" class="w-40 mr-3 mt-2">
+    </div>
+    <nav class="hidden peer-checked:flex flex-col absolute top-full left-0 z-50 w-50 bg-white shadow-md p-4 space-y-2 md:flex md:static md:flex-row md:space-y-0 md:space-x-4 md:shadow-none md:mr-50 lg:mr-100">
+    <a href="accueil.html" class="text-gray-700 hover:text-black md:text-xl">Accueil</a>
+    <a href="catalogue.html" class="text-gray-700 hover:text-black md:text-xl">Catalogue</a>
+    <a href="contact.html" class="text-gray-700 hover:text-black md:text-xl">Contact</a>
+  </nav>
+    <div class="relative inline-block p-2 rounded-xl border border-gray-200 bg-white cursor-pointer">
+  <a href="panier.html"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+  </svg></a>
+  
+  
+
+  <span class="absolute -top-1 -right-1 bg-amber-700 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+    2
+  </span>
+</div>
+  
+  
+
+ 
+</div>
+    </div>
+    
+  </header>
+
+                          <!--------------------acceuille page ------------>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<div class="text-center bg-[url('../images/Frame.png')] bg-cover bg-center h-90 pt-70 text-[#C58A55] md: w-50 h-220 pt-220 text-center bg-[url('../ima')] lg: w-full h-250 pt-220 text-center" >
+
+ 
+<button class=" border-2 border-[#DADFD9] bg-[#FAF8F4] rounded-md p-2  lg: rounded-md mb-4 border-2 p-2 w-80  md: "  type="button " >Découvrir notre collection </button> 
+  
+</div>
+
+  <h1 class="font-semibold p-4 text-xl lg: font-semibold p-4 text-xl md: font-semibold p-4 text-xl">Nos categories</h1>
+
+<div class="flex flex-col gap-4  mt-2 lg:flex flex-row md: grid grid-cols-2">
+
+  <div  class=" mx-auto  text-center " >
+ <img  src="images/tazyin_almanzil.jpg" alt="decors" class=" w-60 h-60  shadow-lg rounded-xl  border-1 border-[#DADFD9] "><br>
+ <p class="">Objets décoratifs</p>
+</div>
+
+<div   class=" mx-auto  text-center  "> 
+<img  src= "images/tajine.jpg" alt="tajine "     class=" w-60 h-60  shadow-lg rounded-xl  border-1 border-[#DADFD9]  "><br>  
+ <p class="">Tajines artisanaux</p>
+
+</div>
+
+<div   class=" mx-auto text-center   ">
+  <img  src= "images/brard.jpg" alt="tajine"         class=" w-60 h-60  shadow-lg rounded-xl border-1 border-[#DADFD9] "><br> 
+ <p class="">Services à thé</p>
+
+</div>
+
+<div   class=" mx-auto text-center ">
+<img  src= "images/tazyine.jpg" alt="tajine"     class=" w-60 h-60 border-[#C58A55] shadow-lg rounded-xl  "><br>
+ <p class="">Décoration murale</p>
+
+</div>
+
+</div>
+
+ <h1 class="font-semibold p-4 text-xl md:font-semibold p-4 text-xl lg: font-semibold p-4 text-xl">produits vedettes</h1>
+
+<div class="flex flex-col gap-4  mt-2 mx-auto lg: flex flex-row md: flex flex-row p-2" >
+
+  <div  class="bg-[#FFFFFF]  rounded-2xl p-4 h-70 w-80  mx-auto  shadow-md border-1 border-[#DADFD9]"><img  class="  w-full h-30   rounded-xl" src="images/Ornate_Asian_Porcelain_Vase.png" alt="vase decor" >
+  <p class="text-xl font-semibold"> Vase Terra <br> </p>
+  
+  <div class="flex  gap-1" >
+    
+    <p class="text-[#FFCE31]"> <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+  </p>
+    <p class="font-semibold">4.2 (35 avis) <br> </p>
+  </div>
+  <p class="font-semibold text-xl">400 DH</p>
+    
+  
+</div>
+
+<div class="bg-[#FFFFFF]  rounded-2xl p-4 h-70 w-80 mx-auto shadow-md border-1 border-[#DADFD9]">
+  <img  class="  w-79 h-30   rounded-lg" src="images/Gemini_Generated_Image_nhzbkanhzbkanhzb.jpg" alt="mug" > 
+ <p class="text-xl font-semibold"> Tasse Siennaa <br> </p>
+ <div class="flex  gap-1" >
+    
+    <p class="text-[#FFCE31]"> <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+  </p>
+    <p class="font-semibold">4.8 (355 avis) <br> </p>
+  </div>
+  <p class="font-semibold text-xl">150 DH</p>
+</div>
+
+<div class="bg-[#FFFFFF]  rounded-2xl p-4 h-70 w-80 mx-auto shadow-md border-1  border-[#DADFD9] ">
+  <img   class="  w-79 h-30   rounded-lg" src="images/Gemini_Generated_Image_63hhul63hhul63hh.jpg" alt="moroccaine tajine" >
+<p class="text-xl font-semibold"> Tajine <br> </p>
+<div class="flex  gap-1" >
+    
+    <p class="text-[#FFCE31]"> <svg viewBox="0 0 24 24" class="w-5 h-5 fill-current">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+  </p>
+    <p class="font-semibold">3.8 (235 avis) <br> </p>
+  </div>
+  <p class="font-semibold text-xl">550 DH</p>
+</div>
+
+
+</div>
+
+<div class=" p-4 text-center pt-11" > 
+  <button class=" bg-[#FAF8F4] text-[#315A46] border-1 border-[#DADFD9] shadow-lg w-50 h-26 p-2 lg: bg-[#FAF8F4] text-[#315A46] border-1 border-[#DADFD9] shadow-lg w-100 h-auto rounded-md md: bg-[#FAF8F4] text-[#315A46] border-1 border-[#DADFD9] shadow-lg w-100 h-auto rounded-md 
+ " type="button">Voir toutes categories</button> 
+
+</div>
+
+<!--footer-->
+<footer>
+    <div class="pied-container text-xs w-full bg-white border-t-2 p-5 border-[var(--color-border)] flex flex-col justify-between">
+    
+
+    <div class="flex md:flex-row justify-between gap-6">
+        <div class="navigation">
+          <h2 class="mb-4 text-black text-lg font-bold">NAVIGATION</h2>
+          <p class="mb-2"><a href="accueil.html" class="hover:underline">Accueil</a></p>
+          <p class="mb-2"><a href="catalogue.html" class="hover:underline">Catalogue</a></p>
+        </div>
+        
+        <div class="contact">
+          <h2 class="mb-4 text-black text-lg font-bold">AIDE & CONTACT</h2>
+          <p class="mb-2"><a href="contact.html" class="hover:underline">Nous contacter</a></p>
+          <p class="mb-2"><a href="#" class="hover:underline">Questions frequentes (FAQ)</a></p>
+          <p>Email : <a href="mailto:ifolki01@gmail.com" class="hover:underline">ifolki01@gmail.com</a></p>
+        </div>
+    </div>
+
+
+    <div class="info text-center mt-6 pt-4 border-t border-[var(--color-border)]">
+      <p>© 2026 ifolki. Tous droits réservés.</p>
+    </div>
+
+</div>
+  </footer>
+
+
+
+
+
+
+
+
 </body>
 </html>

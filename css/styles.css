@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+<<<<<<< HEAD
 
 :root {
   --color-primary: #315A46;
@@ -13,9 +14,12 @@
   --color-error: #B42318;
 }
 
+=======
+>>>>>>> ed0155bb72115852305c2270fa0b438764cc0dcd
 body {
   background-color: #FAF8F4;
 }
+<<<<<<< HEAD
 
 p, a, h4, ul {
   font-family: "Inter Regular";
@@ -44,5 +48,12 @@ input[type="email"]:not(:placeholder-shown):valid {
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
+=======
+.en-tet-container {
+    border-color: #DADFD9;
+}
+.pied-container {
+    border-color: #DADFD9;
+>>>>>>> ed0155bb72115852305c2270fa0b438764cc0dcd
 }
 
