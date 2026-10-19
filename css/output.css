@@ -1296,6 +1296,12 @@
     .lg\:gap-\[89px\] {
       gap: 89px;
     }
+    .lg\:bg-\[url\(\'\.\.\/images\/Frame\.png\'\)\] {
+      background-image: url('../images/Frame.png');
+    }
+    .lg\:bg-\[url\(\'\.\.\/images\/banner\.png\'\)\] {
+      background-image: url('../images/banner.png');
+    }
     .lg\:object-cover {
       object-fit: cover;
     }
